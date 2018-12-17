@@ -1,64 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Basketball | Albay Noli II B.</title>
+	<title>Contact | Basketball</title>
 	<link rel="icon" href="assets/images/icon.png">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/btns.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 	<style type="text/css">
-		
+		label,input,select,textarea{
+		    font-family: 'Open Sans Condensed' !important;
+		}
+		.button-success,
+        .button-error,
+        .button-warning,
+        .button-secondary {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+        }
+
+        .button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+        }
+
+        .button-warning {
+            background: rgb(223, 117, 20); /* this is an orange */
+        }
+
+        .button-secondary {
+            background: rgb(66, 184, 221); /* this is a light blue */
+        }
 	</style>
 </head>
 <body>
 <ul  class="topnav">
-  <li><a class="header active" href="index.html">DDribble</a></li>
+  <li><a class="header active" href="index.html">Prime Hoopers</a></li>
+  <li class="right"><a href="https://albay13.github.io/web-portfolio/">Developer's Portfolio</a></li>
   <li class="right"><a href="contact.html">Contact </a></li>
   <li class="right"><a href="register.html">Join Now</a></li>
-  <li class="right"><a href="about.html">About</a></li>
+  <li class="right"><a href="about.html">About & Services</a></li>
   <li class="right"><a href="article.html">Article </a></li>
   <li class="right"><a href="index.html">Home</a></li>
  
 </ul>
 <div class="contact-parallax" id="personal_info">
-</div>
-<br>
-<section id="contact-us">
 	<center>
-		<h1 class="wow fadeInUp">Contact Us</h1>
+		<h1 class="par-text wow fadeInUp text-black"> Contact Us</h1>
 		<hr class="short-red">
+		
 	</center>
+</div>
+<section id="contact-us">
 	<div class="row">
 		<div class="m-right-100" style="display: inline-block;">
-			<form>
-				<h3> Full Name : </h3>
-				<input class="m-right-20" type="text" name="" placeholder="Enter first name" required>
-				<input type="text" name="" placeholder="Enter last name" required>
-				<h3><i class="fa fa-telephone"></i> Contact Details : </h3>
-				<input class="m-right-20" type="text" name="" placeholder="Enter your 11-digit cellphone number" maxlength="11" max="15" required>
-				<input type="email" name="" placeholder="Enter email address" required>
-				<h3>Message : </h3>
-				<textarea cols="50" rows="5" required></textarea>
-				<br/><br/>
-				<button class="btn btn-danger" type="submit" name="">Send Message</button>
-			</form>
+			    <form class="pure-form pure-form-stacked">
+    <fieldset>
+    	<legend>Fill-out all the information needed to send us your message.</legend>
+    	<div class="pure-g">
+            <div class="pure-u-1-2 pure-u-md-1-3">
+                <label for="first-name">First Name</label>
+                <input id="first-name" class="pure-u-23-24" type="text" placeholder="Enter first name">
+            </div>
+
+            <div class="pure-u-1-2 pure-u-md-1-3">
+                <label for="last-name">Last Name</label>
+                <input id="last-name" class="pure-u-23-24" type="text" placeholder="Enter last name">
+            </div>
+
+            <div class="pure-u-1 pure-u-md-1-3">
+                <label for="email">E-Mail</label>
+                <input id="email" class="pure-u-23-24" type="email" required placeholder="Enter email">
+            </div>
+
+            
+            <div class="pure-u-1 pure-u-md-1-3">
+                <label for="state">Message</label>
+               	<textarea rows="5" class="pure-input-1" cols="5" placeholder="Enter message"></textarea>
+            </div>
+        </div>
+        <button type="submit" class="pure-u-1 pure-button button-error">Submit</button>
+    </fieldset>
+</form>
 		</div>
 		<div style="display: inline-block;">
-			<h3><i class="fa fa-phone"></i> Contact Number : (02) 833 55  / 0912 458 3714</h3>
-			<h3><i class="fas fa-map-marker-alt"></i> Address : 9153 Pateros St. Barangay Valenzuela Makati City</h3>
-			<h3><i class="fas fa-at"></i> Email Address : pahiram.albay@gmail.com</h3>
+			<h4>Contact information</h4>
+			<h4><i class="fa fa-phone"></i> Contact Number : (02) 833 55  / 0912 458 3714</h4>
+			<h4><i class="fas fa-map-marker-alt"></i> Address : 9153 Pateros St. Barangay Valenzuela Makati City</h4>
+			<h4><i class="fas fa-at"></i> Email Address : pahiram.albay@gmail.com</h4>
 			<a href="https://www.facebook.com/noly.albay" class="fab fa-facebook-f"></a>
 			<a href="https://twitter.com/NolyAlbay" class="fab fa-twitter"></a>
 			<a href="https://www.youtube.com/channel/UCtkpRJ-DycJ977_rTA0LTuA" class="fab fa-youtube"></a>
 			<a href="https://plus.google.com/u/1/100747801714908263043?tab=wX" class="fab fa-google-plus-g"></a>
-			<br/><br/><br/>
 			<br/><br/><br/><br/>
-			<br/><br/>
 		</div>
 	</div>	
 </section>
-<br/><br/><br/><br/>
 <div class="footer">
   	  <div style="display: inline-block; margin-left: 50px;">
 	  	<h3>Brief Description</h3>
@@ -69,10 +112,10 @@
 		<br/>
 	  </div>
 	  <div style="display: inline-block; margin-right: 200px; margin-left: 200px;">
-	  	<h3>DDribble@2018</h3>
+	  	<h3>Prime Hoopers</h3>
 	  	<hr style="margin-top: -20px;">
 	  	<p>Article</p>
-	  	<p>About</p>
+	  	<p>About & Services</p>
 	  	<p>Contact</p>
 	  	<p>Join Now</p>
 	  </div>

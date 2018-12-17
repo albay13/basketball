@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Basketball | Albay Noli II B.</title>
+	<title>Registration | Basketball</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="assets/images/icon.png">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/customizecss.">
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 	<style type="text/css">
 		body{
 		   background-color: black;
-	        background: url('assets/images/register.jpg') no-repeat center center fixed !important; 
+	        background: url('assets/images/bb.jpg') no-repeat center center fixed !important; 
 	        -webkit-background-size: cover;
 	        -moz-background-size: cover;
 	        -o-background-size: cover;
@@ -18,41 +21,100 @@
 	        color: black;
 	        overflow-x: hidden;
 	    }
+	    label,input,select{
+		    font-family: 'Open Sans Condensed' !important;
+		}
+		.button-success,
+        .button-error,
+        .button-warning,
+        .button-secondary {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+        }
+
+        .button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+        }
+
+        .button-warning {
+            background: rgb(223, 117, 20); /* this is an orange */
+        }
+
+        .button-secondary {
+            background: rgb(66, 184, 221); /* this is a light blue */
+        }
 	</style>
 </head>
 <body>
 <ul  class="topnav">
-  <li><a class="header active" href="index.html">DDribble</a></li>
+  <li><a class="header active" href="index.html">Prime Hoopers</a></li>
+  <li class="right"><a href="https://albay13.github.io/web-portfolio/">Developer's Portfolio</a></li>
   <li class="right"><a href="contact.html">Contact </a></li>
   <li class="right"><a href="register.html">Join Now</a></li>
-  <li class="right"><a href="about.html">About</a></li>
+  <li class="right"><a href="about.html">About & Services</a></li>
   <li class="right"><a href="article.html">Article </a></li>
   <li class="right"><a href="index.html">Home</a></li>
  
 </ul>
 <br/>
 <div class="row">
-	<div class="card-white" style="width: 500px; padding-right:5px;padding-left:5px;opacity: 0.65">
+	<div class="wow rollIn card-white" style=" width: 650px; padding-right:15px;padding-left:15px;opacity: 0.80">
+			<h3 style="color: black;">Register to Prime Hoopers to join.<i class="fa fa-lock fa-3x" style=" opacity: 0.7; float: right;"></i></h3>
+				<h4 style="color: black;">Fill-out all the required field.<i> Red (<span style="color: red;">*</span>) asterisk indicates required field.</i></h4>
 			<div class="wow fadeInDown divider-new">
-                <h3 class="text-black" >Login details</h3>
+				<h3 class="text-black" >Personal Information</h3>
             </div>
-            <div class="column m-right-50">
-             <h4 class="text-black">First Name </h4>
-             <input type="text" name="fname">
+           <form class="pure-form pure-form-stacked">
+    <fieldset>
+        <div class="pure-g">
+            <div class="pure-u-1-2 pure-u-md-1-3">
+                <label for="first-name">First Name</label>
+                <input id="first-name" class="pure-u-23-24" type="text" placeholder="Enter your first name" required>
             </div>
-            <div class="column"> 
-             <h4 class="text-black">First Name </h4>
-             <input type="text" name="fname">
+
+            <div class="pure-u-1-2 pure-u-md-1-3">
+                <label for="last-name">Last Name</label>
+                <input id="last-name" class="pure-u-23-24" type="text" placeholder="Enter your last name" required>
             </div>
-             <br/><br/><br/><br/><br/>
+
+            <div class="pure-u-1-2 pure-u-md-1-3">
+                <label for="email">E-Mail</label>
+                <input id="email" class="pure-u-23-24" type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="pure-u-1-2 pure-u-md-1-3">
+                <label for="city">Contact number</label>
+                <input id="city" class="pure-u-23-24" type="text" required>
+            </div>
+
+            <div class="pure-u-1 pure-u-md-1-3">
+                <label for="state">Sex</label>
+                <select id="state" class="pure-input-1-2" required>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+        </div>
+        <div class="wow fadeInDown divider-new">
+				<h3 class="text-black" >Terms of Service</h3>
+            </div>
+        <label>
+        	By submitting your registration information, you indicate that you agree to the Terms of use and have read and understood Prime Hooper's Privacy Policy. Your submission of this form will constitute your consent to the collection and use of this information by Prime Hooper and its affiliates. You also agree to receive required administrative and legal notices such as this electronically.
+        </label>
+        <label for="terms" class="pure-checkbox">
+            <input id="terms" type="checkbox" required> I Agree
+        </label>
+        <button type="submit" class="pure-u-1 pure-button button-error">Submit</button>
+    </fieldset>
+</form>
+             <br/>
 	</div>
 </div>
-<br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/>
-
-<br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/>
-
 <div class="footer">
   	  <div style="display: inline-block; margin-left: 50px;">
 	  	<h3>Brief Description</h3>
@@ -63,10 +125,10 @@
 		<br/>
 	  </div>
 	  <div style="display: inline-block; margin-right: 200px; margin-left: 200px;">
-	  	<h3>DDribble@2018</h3>
+	  	<h3>Prime Hoopers</h3>
 	  	<hr style="margin-top: -20px;">
 	  	<p>Article</p>
-	  	<p>About</p>
+	  	<p>About & Services</p>
 	  	<p>Contact</p>
 	  	<p>Join Now</p>
 	  </div>

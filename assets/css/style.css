@@ -12,7 +12,7 @@ table,tr,td{
 				padding: 5px;
 				width: 50%;
 }
-input[type="text"],input[type="email"]{
+input[type="text"],input[type="email"],input[type="date"]{
 	padding: 10px;
 }
 .img-valign {
@@ -105,6 +105,8 @@ h3{
   justify-content: center;
   align-items: center;
   font-weight: 300;
+  margin-bottom: -20px;
+  margin-top: -20px;
 }
 
 .divider-new:before {
@@ -357,7 +359,7 @@ ul.topnav li.right {float: right; padding-top:10px !important;}
   ul.topnav li {float: none;}
 }
 .fab {
-  padding: 20px;
+  padding: 10px;
   font-size: 20px;
   width: 20px;
   text-align: center;
@@ -397,6 +399,26 @@ ul.topnav li.right {float: right; padding-top:10px !important;}
 		  background-repeat: no-repeat;
 		  padding-top: 150px;
 }
+.article-parallax{
+   background-image: url("../images/article.jpg");
+      /* Set a specific height */
+      height: 300px; 
+      opacity: 0.8;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      padding-top: 200px;
+}
+.photos-parallax{
+  background-image: url("../images/camera.jpg");
+      /* Set a specific height */
+      height: 300px; 
+      opacity: 0.8;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      padding-top: 150px;
+}
 .about-parallax{
 		background-image: url("../images/basketball-bg2.jpg");
 		  /* Set a specific height */
@@ -424,7 +446,7 @@ ul.topnav li.right {float: right; padding-top:10px !important;}
 .parallax{
 	  background-image: url("../images/zz.png");
 		  /* Set a specific height */
-		  height: 500px; 
+		  height: 400px; 
 		  opacity: 0.8;
 		  /* Create the parallax scrolling effect */
 		  background-attachment: fixed;
